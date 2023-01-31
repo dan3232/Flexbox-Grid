@@ -1,0 +1,56 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background-color:cyan;
+}
+
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+.header,
+.footer {
+    height: 10%;
+    width: 100%;
+    background-color: darksalmon;
+}
+
+.main-content {
+    background-color: springgreen;
+    flex: auto;
+}
+
+.my-online-users {
+    max-width: 300px;
+    max-height: 80%;
+    overflow: auto;
+}
+
+.my-online-user {
+    background-color: lightgreen;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    border: 0.125rem solid black;
+}
+
+.user-username {
+    order: 1;
+}
+
+.user-online {
+    order: 0;
+    margin: 0 1rem;
+    background-color: green;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+}
